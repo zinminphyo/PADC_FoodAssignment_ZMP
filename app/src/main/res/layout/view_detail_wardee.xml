@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/iv_detail_food_image"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/food" />
+
+    <TextView
+        android:id="@+id/tv_detail_food_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/iv_detail_food_image"
+        android:layout_marginLeft="@dimen/margin_medium_3"
+        android:layout_marginTop="@dimen/margin_xxlarge"
+        android:text="White Safe pasta
+with vegetable"
+        android:textSize="@dimen/text_regular_3x"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tv_detail_food_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/iv_detail_food_image"
+        android:layout_marginRight="@dimen/margin_medium"
+        android:layout_marginTop="@dimen/margin_xxlarge"
+        android:background="@drawable/round_corner"
+        android:elevation="2dp"
+        android:padding="@dimen/margin_medium"
+        android:text="$269" />
+
+    <TextView
+        android:id="@+id/tv_detail_food_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_detail_food_name"
+        android:layout_marginLeft="@dimen/margin_medium_3"
+        android:layout_marginRight="@dimen/margin_medium"
+        android:layout_marginTop="@dimen/margin_medium_3"
+        android:text="This is a food application Test.This is a food application Test.This is a food application Test.
+This is a food application Test.This is a food application Test.This is a food application Test." />
+
+    <EditText
+        android:id="@+id/et_detail_note"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_detail_food_text"
+        android:layout_marginLeft="@dimen/margin_medium_2"
+        android:layout_marginRight="@dimen/margin_medium"
+        android:layout_marginTop="@dimen/margin_medium"
+        android:hint="Add a note (extra source,no onions, etc .)"
+        android:textSize="@dimen/text_regular"/>
+
+    <LinearLayout
+        android:id="@+id/ll_detail_add_to_cart"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="3"
+        android:clickable="true"
+        android:layout_below="@+id/et_detail_note"
+        android:layout_marginTop="@dimen/margin_medium"
+        android:layout_marginLeft="@dimen/margin_medium_2"
+        android:layout_marginRight="@dimen/margin_medium"
+        >
+        
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="- 2 +"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginRight="-8dip"
+            android:clickable="false"/>
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:text="ADD TO CART"
+            android:clickable="false"
+            />
+
+    </LinearLayout>
+
+
+</RelativeLayout>

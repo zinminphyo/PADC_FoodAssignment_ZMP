@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.padcmyanmar.padc_foodassignment_zmp.viewpods.EmptyViewPod
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/iv_empty_image"
+        android:layout_width="180dp"
+        android:layout_height="180dp"
+        android:src="@drawable/empty_data_placeholder"
+        android:layout_centerInParent="true"/>
+
+    <TextView
+        android:id="@+id/tv_empty_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="လက္ရွိမွာေဒတာေတြကိုမျပေပးႏိုင္ေသးတာစိတ္မေကာင္းပါဘူး😔😔😔"
+        android:layout_below="@+id/iv_empty_image"
+        android:gravity="center"/>
+
+
+</com.padcmyanmar.padc_foodassignment_zmp.viewpods.EmptyViewPod>
